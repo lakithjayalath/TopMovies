@@ -10,7 +10,11 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		510C0B442AE622E100CCD477 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0B432AE622E100CCD477 /* HomeViewModel.swift */; };
+		510C0B472AE6494000CCD477 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0B462AE6494000CCD477 /* Sample.swift */; };
+		510C0B492AE6497F00CCD477 /* MovieGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0B482AE6497F00CCD477 /* MovieGridItem.swift */; };
+		510C0B4C2AE659C700CCD477 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0B4B2AE659C700CCD477 /* DetailScreen.swift */; };
+		7555FF83242A565900829871 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +34,12 @@
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		510C0B432AE622E100CCD477 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		510C0B462AE6494000CCD477 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		510C0B482AE6497F00CCD477 /* MovieGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridItem.swift; sourceTree = "<group>"; };
+		510C0B4B2AE659C700CCD477 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7555FF82242A565900829871 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +62,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		510C0B422AE622C300CCD477 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				7555FF82242A565900829871 /* HomeScreen.swift */,
+				510C0B432AE622E100CCD477 /* HomeViewModel.swift */,
+				510C0B482AE6497F00CCD477 /* MovieGridItem.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		510C0B452AE6492E00CCD477 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				510C0B462AE6494000CCD477 /* Sample.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		510C0B4A2AE659B200CCD477 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				510C0B4B2AE659C700CCD477 /* DetailScreen.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
@@ -74,8 +108,10 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				510C0B4A2AE659B200CCD477 /* detail */,
+				510C0B452AE6492E00CCD477 /* util */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
+				510C0B422AE622C300CCD477 /* home */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
@@ -183,7 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				510C0B472AE6494000CCD477 /* Sample.swift in Sources */,
+				510C0B4C2AE659C700CCD477 /* DetailScreen.swift in Sources */,
+				510C0B442AE622E100CCD477 /* HomeViewModel.swift in Sources */,
+				7555FF83242A565900829871 /* HomeScreen.swift in Sources */,
+				510C0B492AE6497F00CCD477 /* MovieGridItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +359,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,6 +389,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
